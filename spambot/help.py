@@ -31,7 +31,7 @@ BACK = [
 @D3vilBot5.on(events.NewMessage(incoming=True, pattern='/help'))
 async def help(e):
     if e.sender_id in MY_USERS:
-        message = await e.client.send_file(e.chat_id, DISPLAY_PIC, caption="This Is Help Command!!!", buttons=Buttons)
-
+#        message = await e.client.send_file(e.chat_id, DISPLAY_PIC, caption="This Is Help Command!!!", buttons=Buttons)
+        message = await e.client.send_file(e.chat_id, buttons=Buttons)
         
 
